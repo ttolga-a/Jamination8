@@ -1044,9 +1044,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 282766185692471656, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1122000754816353808, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
       propertyPath: m_Name
       value: BombDefuser
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192126818672256409, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3355748681369182889, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
       propertyPath: seqClue
@@ -1064,6 +1072,10 @@ PrefabInstance:
       propertyPath: symbolClue
       value: 
       objectReference: {fileID: 1851108522}
+    - target: {fileID: 4980859848167835236, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7034806628747376013, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
