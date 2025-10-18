@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 675cac849bdcf0c41ab22960c3b5e78c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8564611952876739071
+    second: dalga6_0
+  - first:
+      213: 1295855587939938422
+    second: dalga6_1
+  - first:
+      213: 1843471258550880643
+    second: dalga6_2
+  - first:
+      213: 2482562452623707983
+    second: dalga6_3
+  - first:
+      213: 9114193480014657424
+    second: dalga6_4
+  - first:
+      213: -266609682038570909
+    second: dalga6_5
+  - first:
+      213: -3577784641463299316
+    second: dalga6_6
+  - first:
+      213: -644577306564479417
+    second: dalga6_7
+  - first:
+      213: 7744734856737773510
+    second: dalga6_8
+  - first:
+      213: 6910054413497814141
+    second: dalga6_9
+  - first:
+      213: 8650962833005997030
+    second: dalga6_10
+  - first:
+      213: -5725799694341694735
+    second: dalga6_11
+  - first:
+      213: -8514542202920393070
+    second: dalga6_12
+  - first:
+      213: -4375701690484226802
+    second: dalga6_13
+  - first:
+      213: 5450535870574570852
+    second: dalga6_14
+  - first:
+      213: 1886157772480620910
+    second: dalga6_15
+  - first:
+      213: -7370792259194124025
+    second: dalga6_16
+  - first:
+      213: -1188706731786466786
+    second: dalga6_17
+  - first:
+      213: 7813695513677166656
+    second: dalga6_18
+  - first:
+      213: -6652321789691074047
+    second: dalga6_19
+  - first:
+      213: -4170108312688483026
+    second: dalga6_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dalga6_0
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 965
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff95842a13d9bd670800000000000000
+      internalID: 8564611952876739071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 964
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6707d5f9acdcbf110800000000000000
+      internalID: 1295855587939938422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 945
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389419fa753559910800000000000000
+      internalID: 1843471258550880643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_3
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 964
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fcb51c565d37220800000000000000
+      internalID: 2482562452623707983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_4
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 944
+        width: 54
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09774765eae1c7e70800000000000000
+      internalID: 9114193480014657424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_5
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 964
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360496028efcc4cf0800000000000000
+      internalID: -266609682038570909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_6
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 965
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c035bb213d7295ec0800000000000000
+      internalID: -3577784641463299316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_7
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 964
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74632f3da500e07f0800000000000000
+      internalID: -644577306564479417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_8
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 965
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7d07f9153da7b60800000000000000
+      internalID: 7744734856737773510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 1826
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c4827c0e175ef50800000000000000
+      internalID: 6910054413497814141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_10
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 627
+        width: 58
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebed62acd46e0870800000000000000
+      internalID: 8650962833005997030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_11
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 628
+        width: 11
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa19bbb38fd980b0800000000000000
+      internalID: -5725799694341694735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_12
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 684
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296abd97af446d980800000000000000
+      internalID: -8514542202920393070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_13
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 628
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e058c97fe726643c0800000000000000
+      internalID: -4375701690484226802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_14
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 627
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d2f110f7134ab40800000000000000
+      internalID: 5450535870574570852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_15
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 628
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69ac03308afc2a10800000000000000
+      internalID: 1886157772480620910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_16
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 628
+        width: 11
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709098d0e7fa5b990800000000000000
+      internalID: -7370792259194124025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_17
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 15
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a80c5868dd08fe0800000000000000
+      internalID: -1188706731786466786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_18
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 15
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0487ac3cba2df6c60800000000000000
+      internalID: 7813695513677166656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_19
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a6fd9e3943ea3a0800000000000000
+      internalID: -6652321789691074047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dalga6_20
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25ac43759cc026c0800000000000000
+      internalID: -4170108312688483026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dalga6_0: 8564611952876739071
+      dalga6_1: 1295855587939938422
+      dalga6_10: 8650962833005997030
+      dalga6_11: -5725799694341694735
+      dalga6_12: -8514542202920393070
+      dalga6_13: -4375701690484226802
+      dalga6_14: 5450535870574570852
+      dalga6_15: 1886157772480620910
+      dalga6_16: -7370792259194124025
+      dalga6_17: -1188706731786466786
+      dalga6_18: 7813695513677166656
+      dalga6_19: -6652321789691074047
+      dalga6_2: 1843471258550880643
+      dalga6_20: -4170108312688483026
+      dalga6_3: 2482562452623707983
+      dalga6_4: 9114193480014657424
+      dalga6_5: -266609682038570909
+      dalga6_6: -3577784641463299316
+      dalga6_7: -644577306564479417
+      dalga6_8: 7744734856737773510
+      dalga6_9: 6910054413497814141
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

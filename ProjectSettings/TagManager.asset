@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - SingingZone
-  - DialogueZone
+  - Ground
   layers:
   - Default
   - TransparentFX
