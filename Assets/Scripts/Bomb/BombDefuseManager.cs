@@ -7,8 +7,14 @@ using UnityEngine.UI;
 
 public class BombDefuseManager : MonoBehaviour
 {
+    public static BombDefuseManager instance;
+    public WireClue wireClue;
+    public SymbolClue symbolClue;
+    public SequanceClue seqClue;
+    public FrequancyClue freqClue;
+
     [SerializeField] private Image[] activeLights;
-    [SerializeField] private GameObject bombUI;
+    public GameObject bombUI;
 
     [Header("Wire Quiz")]
     [SerializeField] private Button[] wires;
@@ -19,12 +25,12 @@ public class BombDefuseManager : MonoBehaviour
     [SerializeField] private Sprite[] allShapes;
     [SerializeField] private Image[] displayShapes;
     [SerializeField] private Button[] symbolQuizButtons;
-    private int[] correctShapeIndices = new int[3];
+    public int[] correctShapeIndices = new int[3];
     private int[] playerSelectedIndices = new int[3] { 0, 0, 0 }; // Baþlangýçta hepsi ilk þekil (index 0)
 
     [Header("Sequance Puzzle")]
     [SerializeField] private Button[] sequanceButtons;
-    private List<int> correctSequence = new List<int>();
+    public List<int> correctSequence = new List<int>();
     private List<int> playerInputSequence = new List<int>();
 
     [Header("FrequencyQuiz")]
@@ -33,10 +39,15 @@ public class BombDefuseManager : MonoBehaviour
     [SerializeField] private TMP_Text valueText;
     [Tooltip("Doðru kabul edilecek hata payý (+/-). Örn: 0.04")]
     [SerializeField] private float tolerance = 0.04f;
-    private float targetValue;
+    public float targetValue;
     [SerializeField] private RectTransform waveVisualTransform;
     [SerializeField] private float maxScaleX = 1.5f;
     [SerializeField] private float minScaleX = 0.2f;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -48,9 +59,6 @@ public class BombDefuseManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-            bombUI.SetActive(!bombUI.activeSelf);
-
         if (correctAnswerNeeded == 0)
         {
             Debug.Log("Oyunu Kazandýn");
@@ -75,7 +83,7 @@ public class BombDefuseManager : MonoBehaviour
     private void SetupWireQuizCorrectAnswer()
     {
         wiresCorrectIndex = UnityEngine.Random.Range(0, wires.Length);
-        Debug.Log("Doðru kablo indeksi: " + wiresCorrectIndex);
+        wireClue.SetupWireClue(wiresCorrectIndex);
     }
     private void WireClicked(int clickedWireIndex)
     {
@@ -102,6 +110,8 @@ public class BombDefuseManager : MonoBehaviour
         }
 
         Debug.Log("Doðru Kombinasyon: " + correctShapeIndices[0] + ", " + correctShapeIndices[1] + ", " + correctShapeIndices[2]);
+        symbolClue.SetupSymbolClue();
+        
 
         UpdateAllDisplayShapes();
     }
@@ -179,6 +189,7 @@ public class BombDefuseManager : MonoBehaviour
             availableIndices.RemoveAt(randomIndex);
         }
 
+        seqClue.SetupSymbolClue();
         Debug.Log($"Doðru Sýralama: {correctSequence[0]}, {correctSequence[1]}, {correctSequence[2]}");
     }
 
@@ -212,6 +223,7 @@ public class BombDefuseManager : MonoBehaviour
     {
         targetValue = Mathf.Round(UnityEngine.Random.Range(0.0f, 1.0f) * 100f) / 100f;
         Debug.Log($"Hedef Frekans: {targetValue} (Bu ipucu oyun içinde baþka bir yerden bulunmalý)");
+        freqClue.SetupFrequancyClue(targetValue);
 
         frequencySlider.onValueChanged.AddListener(OnSliderValueChanged);
         OnSliderValueChanged(frequencySlider.value);

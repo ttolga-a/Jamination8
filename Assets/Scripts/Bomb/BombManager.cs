@@ -7,6 +7,8 @@ public class BombManager : MonoBehaviour
     public static BombManager instance;
 
     [SerializeField] private int bombFullTime = 300;
+    public GameObject pressFText;
+    private bool playerInRange = false;
     public float bombRemainingTime;
 
     private void Awake()
@@ -19,10 +21,16 @@ public class BombManager : MonoBehaviour
         bombRemainingTime = bombFullTime;
         StartCoroutine(StartCountdown());
         HandleUnstableBomb();
+        if (pressFText)
+            pressFText.SetActive(false);
     }
 
     private void Update()
     {
+        if (playerInRange && Input.GetKeyDown(KeyCode.F))
+        {
+            BombDefuseManager.instance.bombUI.SetActive(!BombDefuseManager.instance.bombUI.activeSelf);
+        }
     }
 
     private IEnumerator StartCountdown()
@@ -80,6 +88,26 @@ public class BombManager : MonoBehaviour
         {
             yield return new WaitForSeconds(UnityEngine.Random.Range(0, 60));
             RandomTimeAdder();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerInRange = true;
+            if (pressFText)
+                pressFText.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerInRange = false;
+            if (pressFText)
+                pressFText.SetActive(false);
         }
     }
 }
