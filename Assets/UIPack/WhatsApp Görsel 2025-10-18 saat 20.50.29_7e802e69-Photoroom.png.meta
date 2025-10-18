@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 451e511de5cf2c74f996e8668c0b7ed8
+guid: 92b10f2f1993e454d8f184fe37769609
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8038976213705442086
-    second: 30_0
+      213: -65464808721220894
+    second: "WhatsApp G\xF6rsel 2025-10-18 saat 20.50.29_7e802e69-Photoroom_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 30_0
+      name: "WhatsApp G\xF6rsel 2025-10-18 saat 20.50.29_7e802e69-Photoroom_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 26
+        width: 492
+        height: 875
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adcb548d9b1df6090800000000000000
-      internalID: -8038976213705442086
+      spriteID: 2eaf1e27a1c671ff0800000000000000
+      internalID: -65464808721220894
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      30_0: -8038976213705442086
+      "WhatsApp G\xF6rsel 2025-10-18 saat 20.50.29_7e802e69-Photoroom_0": -65464808721220894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
