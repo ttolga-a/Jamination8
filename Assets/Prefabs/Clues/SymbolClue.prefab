@@ -594,6 +594,7 @@ GameObject:
   - component: {fileID: 2672220625182861627}
   - component: {fileID: 5226624816111762288}
   - component: {fileID: 1881548070315249289}
+  - component: {fileID: 8974830961251004676}
   m_Layer: 0
   m_Name: SymbolClue
   m_TagString: Untagged
@@ -611,7 +612,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.348, y: -3.57, z: 0}
-  m_LocalScale: {x: 0.7974, y: 0.2364, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1020335795365376181}
@@ -662,7 +663,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -5643105228771564274, guid: e2819d97fba7b7a478292c683c3fdc36, type: 3}
   m_Color: {r: 1, g: 0.81454664, b: 0.26226407, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -707,17 +708,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.013038695, y: 1.979049}
+  m_Offset: {x: -0.08948827, y: 0.65408504}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4, y: 4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3911434, y: 4.958098}
+  m_Size: {x: 2.9527092, y: 2.3081696}
   m_EdgeRadius: 0
 --- !u!114 &1881548070315249289
 MonoBehaviour:
@@ -733,6 +734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressFText: {fileID: 5435635638757666166}
   cluePanel: {fileID: 1372183724018951365}
+  player: {fileID: 0}
   allAnswers:
   - {fileID: -6118563038658647825, guid: b1e0e11bbbb62794b817b139de09550b, type: 3}
   - {fileID: -8290192396400357592, guid: 5808c54f705a7d944889709f08498708, type: 3}
@@ -742,6 +744,28 @@ MonoBehaviour:
   - {fileID: 173273762481468015}
   - {fileID: 4858220114655422798}
   - {fileID: 3997184604183963104}
+--- !u!95 &8974830961251004676
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805380709272585724}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49f3c5cc77235b644ab9905d8dc2e15f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9140066622676080076
 GameObject:
   m_ObjectHideFlags: 0

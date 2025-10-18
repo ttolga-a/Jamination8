@@ -102,7 +102,6 @@ MonoBehaviour:
   primaryWallCheck: {fileID: 1176134689696097807}
   secondaryWallCheck: {fileID: 6830785466182958904}
   groundCheck: {fileID: 8366907743629200967}
-  groundDetected: 0
 --- !u!50 &4480435178580673736
 Rigidbody2D:
   serializedVersion: 5

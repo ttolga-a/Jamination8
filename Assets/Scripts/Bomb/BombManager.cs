@@ -5,6 +5,7 @@ using UnityEngine;
 public class BombManager : MonoBehaviour
 {
     public static BombManager instance;
+    public Player player;
 
     [SerializeField] private int bombFullTime = 300;
     public GameObject pressFText;
@@ -30,6 +31,10 @@ public class BombManager : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             BombDefuseManager.instance.bombUI.SetActive(!BombDefuseManager.instance.bombUI.activeSelf);
+            if (BombDefuseManager.instance.bombUI.activeSelf)
+                player.LockPlayer();
+            else
+                player.UnlockPlayer();
         }
     }
 
@@ -46,13 +51,34 @@ public class BombManager : MonoBehaviour
     public void BombTimeChanger(int TimeValue)
     {
         bombRemainingTime += TimeValue;
+        var unstableText = Ingame_UI.instance.bombUnstableText;
+
+        if (TimeValue > 0)
+        {
+            unstableText.color = Color.green;
+            unstableText.text = "+" + TimeValue.ToString();
+            StartCoroutine(BombUnstableTextCo());
+        }
+        else if (TimeValue < 0)
+        {
+            unstableText.color = Color.red;
+            unstableText.text = TimeValue.ToString();
+            StartCoroutine(BombUnstableTextCo());
+        }
+        else 
+            unstableText.text = "";
+    }
+
+    private void BombTimeChangerForUnstable(int TimeValue)
+    {
+        bombRemainingTime += TimeValue;
     }
 
     private void RandomTimeAdder()
     {
         int addingValue = UnityEngine.Random.Range(-45, 45);
 
-        BombTimeChanger(addingValue);
+        BombTimeChangerForUnstable(addingValue);
 
         if (addingValue > 0)
         {

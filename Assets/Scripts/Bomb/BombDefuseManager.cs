@@ -12,6 +12,7 @@ public class BombDefuseManager : MonoBehaviour
     public SymbolClue symbolClue;
     public SequanceClue seqClue;
     public FrequancyClue freqClue;
+    public Player player;
 
     [SerializeField] private Image[] activeLights;
     public GameObject bombUI;
@@ -68,6 +69,7 @@ public class BombDefuseManager : MonoBehaviour
     public void CloseBombUI()
     {
         bombUI.SetActive(!bombUI.activeSelf);
+        player.UnlockPlayer();
     }
 
     private void SetupWireQuiz()
@@ -223,7 +225,7 @@ public class BombDefuseManager : MonoBehaviour
     {
         targetValue = Mathf.Round(UnityEngine.Random.Range(0.0f, 1.0f) * 100f) / 100f;
         Debug.Log($"Hedef Frekans: {targetValue} (Bu ipucu oyun içinde baþka bir yerden bulunmalý)");
-        freqClue.SetupFrequancyClue(targetValue);
+        //freqClue.SetupFrequancyClue(targetValue);
 
         frequencySlider.onValueChanged.AddListener(OnSliderValueChanged);
         OnSliderValueChanged(frequencySlider.value);

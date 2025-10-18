@@ -1367,6 +1367,7 @@ MonoBehaviour:
   symbolClue: {fileID: 0}
   seqClue: {fileID: 0}
   freqClue: {fileID: 0}
+  player: {fileID: 0}
   activeLights:
   - {fileID: 5436357889104032241}
   - {fileID: 8228512639369540603}
@@ -1524,7 +1525,7 @@ RectTransform:
   m_Father: {fileID: 3635590906220827754}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4279,7 +4280,7 @@ RectTransform:
   m_Father: {fileID: 5561011099929419676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

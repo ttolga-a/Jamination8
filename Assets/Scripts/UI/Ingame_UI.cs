@@ -4,9 +4,11 @@ using UnityEngine;
 public class Ingame_UI : MonoBehaviour
 {
     public static Ingame_UI instance;
+    public Player player;
 
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private GameObject pauseUI;
+    [SerializeField] private GameObject settingsPanel;
     public TMP_Text bombUnstableText;
     private bool isPaused = false;
 
@@ -45,12 +47,14 @@ public class Ingame_UI : MonoBehaviour
                 isPaused = false;
                 Time.timeScale = 1;
                 pauseUI.SetActive(false);
+                player.UnlockPlayer();
             }
             else
             {
                 isPaused = true;
                 Time.timeScale = 0;
                 pauseUI.SetActive(true);
+                player.LockPlayer();
             }
         }
     }
@@ -59,5 +63,12 @@ public class Ingame_UI : MonoBehaviour
     {
         pauseUI.SetActive(!pauseUI.activeSelf);
         Time.timeScale = 1;
+        player.UnlockPlayer();
+    }
+    
+    public void SettingsButton()
+    {
+        settingsPanel.SetActive(!settingsPanel.activeSelf);
+        pauseUI.SetActive(!pauseUI.activeSelf);
     }
 }
