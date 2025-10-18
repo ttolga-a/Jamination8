@@ -6,28 +6,29 @@ using TMPro;
 public class PlanktonInteraction : MonoBehaviour
 {
     [Header("Interaction Elements")]
-    public GameObject pressFText;       // “F tuşuna basın” yazısı (sahne objesi)
-    public GameObject dialoguePanel;    // Konuşma paneli (Canvas içinde)
-    public TMP_Text dialogueText;       // TMP Text (harf harf yazılacak)
-    public string fullDialogue = "Bombaclat";  // Yazılacak metin
+    [SerializeField] private GameObject pressFText;     // “F tuşuna basın” yazısı
+    [SerializeField] private GameObject dialoguePanel;  // Konuşma paneli
+    [SerializeField] private TMP_Text dialogueText;     // TMP Text (harf harf yazılacak)
+    [TextArea] [SerializeField] private string fullDialogue = "Bombaclat!"; // Diyalog metni
 
     [Header("Audio")]
-    public AudioSource audioSource;     // Ses kaynağı
-    public AudioClip talkSound;         // Konuşma sesi (örnek: plankton_talk.wav)
+    [SerializeField] private AudioSource audioSource;   // Ses kaynağı
+    [SerializeField] private AudioClip talkSound;       // Konuşma sesi
 
     [Header("Timing Settings")]
-    public float typeDuration = 7f;     // Metnin toplamda yazılma süresi (7 sn)
+    [SerializeField] private float typeDuration = 7f;   // Yazı süresi (7 sn)
+    [SerializeField] private float endDelay = 2f;       // Bitince bekleme süresi
+
+    [Header("References")]
+    [SerializeField] private Player player;             // 🔹 Player referansı (Player.cs)
 
     private bool playerInRange = false;
     private bool isTalking = false;
 
     private void Start()
     {
-        if (pressFText)
-            pressFText.SetActive(false);
-
-        if (dialoguePanel)
-            dialoguePanel.SetActive(false);
+        if (pressFText) pressFText.SetActive(false);
+        if (dialoguePanel) dialoguePanel.SetActive(false);
     }
 
     private void Update()
@@ -55,6 +56,10 @@ public class PlanktonInteraction : MonoBehaviour
             playerInRange = false;
             if (pressFText)
                 pressFText.SetActive(false);
+
+            // Eğer konuşma sırasında çıkarsa player kontrolü geri al
+            if (player && player.isLocked)
+                player.UnlockPlayer();
         }
     }
 
@@ -62,12 +67,16 @@ public class PlanktonInteraction : MonoBehaviour
     {
         isTalking = true;
 
-        // UI aç
-        pressFText.SetActive(false);
-        dialoguePanel.SetActive(true);
+        // 🔒 Player hareket etmesin
+        if (player)
+            player.LockPlayer();
+
+        // UI aktif
+        if (pressFText) pressFText.SetActive(false);
+        if (dialoguePanel) dialoguePanel.SetActive(true);
         dialogueText.text = "";
 
-        // Ses başlat
+        // 🎵 Ses başlat
         if (audioSource && talkSound)
         {
             audioSource.clip = talkSound;
@@ -75,7 +84,7 @@ public class PlanktonInteraction : MonoBehaviour
             audioSource.Play();
         }
 
-        // Harf harf yazma
+        // ✍️ Harf harf yazdırma
         float delayPerChar = typeDuration / fullDialogue.Length;
         foreach (char c in fullDialogue)
         {
@@ -83,13 +92,20 @@ public class PlanktonInteraction : MonoBehaviour
             yield return new WaitForSeconds(delayPerChar);
         }
 
-        // Ses durdur
+        // 🔇 Ses durdur
         if (audioSource)
             audioSource.Stop();
 
-        // 2 sn bekle sonra paneli kapat
-        yield return new WaitForSeconds(2f);
-        dialoguePanel.SetActive(false);
+        // 🕒 2 sn bekle
+        yield return new WaitForSeconds(endDelay);
+
+        // UI kapat
+        if (dialoguePanel)
+            dialoguePanel.SetActive(false);
+
+        // 🔓 Player’ı tekrar aktif et
+        if (player && player.isLocked)
+            player.UnlockPlayer();
 
         isTalking = false;
     }
