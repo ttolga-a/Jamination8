@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 930eb787a4ca36a4bb97edac7fef2c87
+guid: ce61ce8145181d84f8a4d450c4a4ec30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6728968682108224755
-    second: player wall slide-sheet_0
-  - first:
-      213: 8084977242711964801
-    second: player wall slide-sheet_1
-  - first:
-      213: -8849379962795022886
-    second: player wall slide-sheet_2
+      213: 2177965146975566803
+    second: "Ads\u0131z tasar\u0131m (3)_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player wall slide-sheet_0
+      name: "Ads\u0131z tasar\u0131m (3)_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 48
-        height: 48
+        x: 226
+        y: 371
+        width: 786
+        height: 998
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0bf53e92a6ed92a0800000000000000
-      internalID: -6728968682108224755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player wall slide-sheet_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18cb6f857fb933070800000000000000
-      internalID: 8084977242711964801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player wall slide-sheet_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad5a4235fcfa03580800000000000000
-      internalID: -8849379962795022886
+      spriteID: 3dbf8a603cfa93e10800000000000000
+      internalID: 2177965146975566803
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c984814ef182ffb4b8a853d3107b873b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player wall slide-sheet_0: -6728968682108224755
-      player wall slide-sheet_1: 8084977242711964801
-      player wall slide-sheet_2: -8849379962795022886
+      "Ads\u0131z tasar\u0131m (3)_0": 2177965146975566803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

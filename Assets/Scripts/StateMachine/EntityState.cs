@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class EntityState
 {
-    protected Player player;
+    public Player player;
     protected StateMachine stateMachine;
     protected string animBoolName;
 
@@ -32,6 +32,15 @@ public abstract class EntityState
     }
     public virtual void Update()
     {
+        
+        if (player.isLocked)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            anim.SetFloat("xVelocity", 0);
+            return;
+        }
+
+
         stateTimer -= Time.deltaTime;
         anim.SetFloat("yVelocity", rb.linearVelocity.y);
 

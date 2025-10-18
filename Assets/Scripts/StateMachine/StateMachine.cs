@@ -12,6 +12,14 @@ public class StateMachine
 
     public void ChangeState(EntityState newState)
     {
+        if (currentState != null && currentState is EntityState entityState)
+        {
+            if (entityState.player != null && entityState.player.isLocked && newState != entityState.player.idleState)
+            {
+                return;
+            }
+            
+        }
         currentState.Exit();
         currentState = newState;
         currentState.Enter();
