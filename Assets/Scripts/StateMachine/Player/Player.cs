@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class Player : MonoBehaviour
     public Player_WallJumpState wallJumpState { get; private set; }
     public Player_DashState dashState { get; private set; }
 
+    [Header("Dash UI")]
+    [SerializeField] private Image dashCooldownMask;
     // ⚙️ Movement Settings
     [Header("Movement Details")]
     public float moveSpeed = 6f;
@@ -26,7 +29,9 @@ public class Player : MonoBehaviour
     public float wallSlideMultiplier = 0.3f;
     public float dashDuration = 0.25f;
     public float dashSpeed = 20f;
-
+    public float dashCooldown = 2f;
+    private bool canDash = true;
+    private float dashCooldownTimer = 0;
     private bool facingRight = true;
     public int facingDirection { get; private set; } = 1;
     public Vector2 moveInput { get; private set; }
@@ -96,30 +101,50 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        stateMachine.UpdateActiveState();
 
-        // 🧱 Wall detection timer
-        if (!canCheckWall)
+    if (!canDash)
+    {
+        dashCooldownTimer -= Time.deltaTime;
+        if (dashCooldownTimer <= 0)
         {
-            wallCheckDisableTimer -= Time.deltaTime;
-            if (wallCheckDisableTimer <= 0)
-                canCheckWall = true;
+            canDash = true;
+            dashCooldownTimer = 0;
         }
 
-        if (canCheckWall)
-        {
-            wallDetected =
-                Physics2D.Raycast(primaryWallCheck.position, Vector2.right * facingDirection, wallCheckDistance, whatIsGround)
-             && Physics2D.Raycast(secondaryWallCheck.position, Vector2.right * facingDirection, wallCheckDistance, whatIsGround);
-        }
+        // 🎨 UI Güncellemesi
+        if (dashCooldownMask != null)
+            dashCooldownMask.fillAmount = dashCooldownTimer / dashCooldown;
+    }
+    else
+    {
+        // Eğer cooldown bittiyse dolgu yok
+        if (dashCooldownMask != null)
+            dashCooldownMask.fillAmount = 0f;
+    }
 
-        // 🔒 Lock kontrolü
-        if (isLocked)
-        {
-            moveInput = Vector2.zero;
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-            return;
-        }
+    stateMachine.UpdateActiveState();
+
+    // Diğer kodların (duvar, zemin, lock kontrolü vs) aynen kalacak ↓
+    if (!canCheckWall)
+    {
+        wallCheckDisableTimer -= Time.deltaTime;
+        if (wallCheckDisableTimer <= 0)
+            canCheckWall = true;
+    }
+
+    if (canCheckWall)
+    {
+        wallDetected =
+            Physics2D.Raycast(primaryWallCheck.position, Vector2.right * facingDirection, wallCheckDistance, whatIsGround)
+         && Physics2D.Raycast(secondaryWallCheck.position, Vector2.right * facingDirection, wallCheckDistance, whatIsGround);
+    }
+
+    if (isLocked)
+    {
+        moveInput = Vector2.zero;
+        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        return;
+    }
     }
 
     private void FixedUpdate()
@@ -205,5 +230,19 @@ public class Player : MonoBehaviour
 
         isLocked = false;
         inputsEnabled = true;
+    }
+
+    public bool CanPerformDash()
+    {
+        return canDash;
+    }
+
+    public void StartDashCooldown()
+    {
+        canDash = false;
+        dashCooldownTimer = dashCooldown;
+
+        if (dashCooldownMask != null)
+            dashCooldownMask.fillAmount = 1f;
     }
 }
