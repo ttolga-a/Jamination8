@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InteractionZone : MonoBehaviour
+public class Interaction_Zone : MonoBehaviour
 {
     [Header("Scene Elements")]
     public GameObject pressFObject;     // Sahnedeki “F tuşuna basın” objesi
