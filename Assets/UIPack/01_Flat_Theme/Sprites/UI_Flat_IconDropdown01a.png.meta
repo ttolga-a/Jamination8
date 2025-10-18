@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 451e511de5cf2c74f996e8668c0b7ed8
+guid: 32345837798640146ab5cbec4afc79d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8038976213705442086
-    second: 30_0
+      213: -7422211755913209494
+    second: UI_Flat_IconDropdown01a_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 30_0
+      name: UI_Flat_IconDropdown01a_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 26
+        width: 7
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adcb548d9b1df6090800000000000000
-      internalID: -8038976213705442086
+      spriteID: a6990198bb10ff890800000000000000
+      internalID: -7422211755913209494
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      30_0: -8038976213705442086
+      UI_Flat_IconDropdown01a_0: -7422211755913209494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

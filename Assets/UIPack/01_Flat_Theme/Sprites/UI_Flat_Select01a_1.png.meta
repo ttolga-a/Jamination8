@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 451e511de5cf2c74f996e8668c0b7ed8
+guid: 346b99f79a6b2cd4687c4cefd98fb504
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8038976213705442086
-    second: 30_0
+      213: -5254974955446248773
+    second: UI_Flat_Select01a_1_0
+  - first:
+      213: -1608500621825196670
+    second: UI_Flat_Select01a_1_1
+  - first:
+      213: 6405606024865653378
+    second: UI_Flat_Select01a_1_2
+  - first:
+      213: -5580666838832839661
+    second: UI_Flat_Select01a_1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 30_0
+      name: UI_Flat_Select01a_1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 48
-        height: 26
+        y: 21
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adcb548d9b1df6090800000000000000
-      internalID: -8038976213705442086
+      spriteID: bba5d0dbe149217b0800000000000000
+      internalID: -5254974955446248773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Flat_Select01a_1_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 21
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d3d17e4357da9e0800000000000000
+      internalID: -1608500621825196670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Flat_Select01a_1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2822833cdb845e850800000000000000
+      internalID: 6405606024865653378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Flat_Select01a_1_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3140195e31d7d82b0800000000000000
+      internalID: -5580666838832839661
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      30_0: -8038976213705442086
+      UI_Flat_Select01a_1_0: -5254974955446248773
+      UI_Flat_Select01a_1_1: -1608500621825196670
+      UI_Flat_Select01a_1_2: 6405606024865653378
+      UI_Flat_Select01a_1_3: -5580666838832839661
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

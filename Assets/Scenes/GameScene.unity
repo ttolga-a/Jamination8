@@ -1140,6 +1140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeBronJames
       objectReference: {fileID: 0}
+    - target: {fileID: 6391232891274317012, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7481769301521381731, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.1328454
