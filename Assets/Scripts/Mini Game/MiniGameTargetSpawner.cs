@@ -6,8 +6,8 @@ public class MiniGameTargetSpawner : MonoBehaviour
     public RectTransform canvasTransform; // Canvas parent
     public float spawnRangeX = 400f;
     public float spawnRangeY = 300f;
-    public float baseSpawnInterval = 0.9f;
-    public float minSpawnInterval = 0.4f;
+    public float baseSpawnInterval = 0.7f;
+    public float minSpawnInterval = 0.3f;
 
     private float timer = 0f;
     private float spawnInterval;
