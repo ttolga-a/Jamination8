@@ -404,7 +404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &210522381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,6 +478,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddcb76b1ec61ed4d9e04de060ddb95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &633879499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 633879500}
+  - component: {fileID: 633879502}
+  - component: {fileID: 633879501}
+  m_Layer: 5
+  m_Name: Lebron
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &633879500
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633879499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1690338936}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &633879501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633879499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7527822298663522053, guid: 8d7872c6c38e93d4badeeba0c48ab023, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &633879502
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633879499}
+  m_CullTransparentMesh: 1
 --- !u!1 &943400284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,9 +1613,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1929522256}
   - {fileID: 1624042915}
   - {fileID: 210522383}
-  - {fileID: 1929522256}
+  - {fileID: 633879500}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2052,7 +2128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6391232891274317012, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7481769301521381731, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2102,6 +2178,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 346072829}
+    - target: {fileID: 7863966799777319231, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: displayImage
+      value: 
+      objectReference: {fileID: 633879501}
+    - target: {fileID: 7863966799777319231, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: fadeDuration
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2183,6 +2267,22 @@ PrefabInstance:
     - target: {fileID: 551428195707312720, guid: f247be1cc8ac8934aa41f24db710848c, type: 3}
       propertyPath: m_Name
       value: Pantolonsuz Adam
+      objectReference: {fileID: 0}
+    - target: {fileID: 869408676444043890, guid: f247be1cc8ac8934aa41f24db710848c, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 869408676444043890, guid: f247be1cc8ac8934aa41f24db710848c, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 869408676444043890, guid: f247be1cc8ac8934aa41f24db710848c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7063608044363252700, guid: 7832c159bbebe88448cb4686efd2075c, type: 3}
+    - target: {fileID: 869408676444043890, guid: f247be1cc8ac8934aa41f24db710848c, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5664874200033857157, guid: f247be1cc8ac8934aa41f24db710848c, type: 3}
       propertyPath: player
