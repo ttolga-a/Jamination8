@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Clues : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class Clues : MonoBehaviour
     public GameObject cluePanel;
     public Player player;
     private bool playerInRange = false;
+
+    [Space]
+    [Header("Clue Specific Event")]
+    public UnityEvent OnClueActivated;
 
     private void Awake()
     {
@@ -25,10 +30,17 @@ public class Clues : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             cluePanel.SetActive(!cluePanel.activeSelf);
+
             if (cluePanel.activeSelf)
+            {
                 player.LockPlayer();
+
+                OnClueActivated.Invoke();
+            }
             else
+            {
                 player.UnlockPlayer();
+            }
         }
     }
 
