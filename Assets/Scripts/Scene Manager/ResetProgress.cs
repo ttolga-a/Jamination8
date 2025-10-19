@@ -3,29 +3,40 @@ using UnityEngine.SceneManagement;
 
 public class ResetProgress : MonoBehaviour
 {
-    [Header("Tuş Ayarı")]
-    [SerializeField] private KeyCode resetKey = KeyCode.R; // 🔁 İstersen başka tuş atayabilirsin (örneğin KeyCode.T)
+#if UNITY_EDITOR
+    [Header("Editor Başlatıldığında Sıfırlama")]
+    [Tooltip("Oyun her editörden başlatıldığında PlayerPrefs temizlenir.")]
+    [SerializeField] private bool autoResetOnPlay = true;
+#endif
 
-    private void Update()
+    private void Awake()
     {
-        if (Input.GetKeyDown(resetKey))
+#if UNITY_EDITOR
+        // 🎮 Editörden başlatıldığında otomatik sıfırlama
+        if (autoResetOnPlay)
         {
-            // 🔄 Tüm PlayerPrefs verisini sil
-            PlayerPrefs.DeleteAll();
-            PlayerPrefs.Save();
-
-            // SceneDataManager varsa anlık belleği de sıfırla
-            if (SceneDataManager.Instance != null)
-            {
-                SceneDataManager.Instance.wiseMonkeyDone = false;
-                SceneDataManager.Instance.playerPosition = Vector3.zero;
-                SceneDataManager.Instance.lastSceneName = "";
-            }
-
-            Debug.Log("🔄 Tüm ilerleme sıfırlandı! (WiseMonkeyDone = false)");
-
-            // İsteğe bağlı: şu anki sahneyi yeniden yükle
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            ResetAllProgress();
         }
+#endif
+    }
+
+    private void ResetAllProgress()
+    {
+        // 🔄 PlayerPrefs temizle
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+
+        // 🔄 SceneDataManager varsa runtime belleğini de sıfırla
+        if (SceneDataManager.Instance != null)
+        {
+            SceneDataManager.Instance.wiseMonkeyDone = false;
+            SceneDataManager.Instance.playerPosition = Vector3.zero;
+            SceneDataManager.Instance.lastSceneName = "";
+        }
+
+        Debug.Log("🧹 Oyun verisi sıfırlandı! (Editor veya manuel reset)");
+
+        // 🔁 Sahneyi yenile
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

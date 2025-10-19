@@ -20,7 +20,7 @@ public class MainMenuButtons : MonoBehaviour
 
     public void StartButton()
     {
-        SceneManager.LoadScene("TolgaTestScene");
+        SceneManager.LoadScene("Map");
     }
 
     public void CreditOn()
