@@ -602,9 +602,12 @@ MonoBehaviour:
   audioSource: {fileID: 271655897913868214}
   monkeySound: {fileID: 0}
   pressFText: {fileID: 4040889204687739848}
+  objectToRemove: {fileID: 0}
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
-  monkeyDialogue: Bilgelik zordur dostum... Ama denemek ister misin?
+  firstDialogue: Bilgelik zordur dostum... Ama denemek ister misin?
+  secondDialogue: "De\u011Ferli dostum maymunu oyununda yendin art\u0131k sen de
+    bilgelerin yan\u0131n"
   fadeImage: {fileID: 0}
   fadeDuration: 1.5
   typeDuration: 3

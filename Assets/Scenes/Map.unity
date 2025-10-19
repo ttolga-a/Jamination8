@@ -439,6 +439,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6391232891274317012, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
       propertyPath: m_Name
       value: LeBronJames
@@ -1195,6 +1203,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3074952994962962852, guid: 8be6083da5fe22b42b051063f3f5588c, type: 3}
   m_PrefabInstance: {fileID: 330398487}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &124001518
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8893287330390304263, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_Name
+      value: PF Village Props - Statue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 73.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -50.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893287330390304281, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8893287330390304263, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1822635131}
+  m_SourcePrefab: {fileID: 100100000, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
 --- !u!4 &143697630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3074952994962962852, guid: 8be6083da5fe22b42b051063f3f5588c, type: 3}
@@ -1273,6 +1357,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6391232891274317012, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
       propertyPath: m_Name
       value: LeBronJames (2)
@@ -104389,21 +104481,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3799531482152709177, guid: 97b3d40003124db458e8786bac5951da, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 3799531482152709177, guid: 97b3d40003124db458e8786bac5951da, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7004151792209561203, guid: 97b3d40003124db458e8786bac5951da, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.44
+      value: 1.0899361
       objectReference: {fileID: 0}
     - target: {fileID: 7004151792209561203, guid: 97b3d40003124db458e8786bac5951da, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.44
+      value: 1.0899361
       objectReference: {fileID: 0}
     - target: {fileID: 7004151792209561203, guid: 97b3d40003124db458e8786bac5951da, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.44
+      value: 1.0899361
       objectReference: {fileID: 0}
     - target: {fileID: 7004151792209561203, guid: 97b3d40003124db458e8786bac5951da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 67.81
+      value: 67.99
       objectReference: {fileID: 0}
     - target: {fileID: 7004151792209561203, guid: 97b3d40003124db458e8786bac5951da, type: 3}
       propertyPath: m_LocalPosition.y
@@ -104465,6 +104565,19 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 1665710034}
+    - target: {fileID: 8708279052747093598, guid: 97b3d40003124db458e8786bac5951da, type: 3}
+      propertyPath: firstDialogue
+      value: "E\u011Fer sen istemek ipucu gerek yenmek benim oyunu"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708279052747093598, guid: 97b3d40003124db458e8786bac5951da, type: 3}
+      propertyPath: objectToRemove
+      value: 
+      objectReference: {fileID: 1822635130}
+    - target: {fileID: 8708279052747093598, guid: 97b3d40003124db458e8786bac5951da, type: 3}
+      propertyPath: secondDialogue
+      value: "De\u011Ferli dostum maymunu oyununda yendin art\u0131k sen de bilgelerin
+        yan\u0131ndas\u0131n"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2921419633588374959, guid: 97b3d40003124db458e8786bac5951da, type: 3}
@@ -104797,6 +104910,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6391232891274317012, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
       propertyPath: m_Name
       value: LeBronJames (3)
@@ -105840,6 +105961,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3666239142704106659, guid: 1c2bcc21172456b42b91bc24ddfc6b9c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 3666239142704106659, guid: 1c2bcc21172456b42b91bc24ddfc6b9c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4074350539147165050, guid: 1c2bcc21172456b42b91bc24ddfc6b9c, type: 3}
       propertyPath: m_Name
       value: Plankton
@@ -106002,6 +106131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6391232891274317012, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
       propertyPath: m_Name
       value: LeBronJames (4)
@@ -106760,6 +106897,26 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 1665710034}
+    - target: {fileID: 1568910860979031381, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: m_fontSize
+      value: 30.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568910860979031381, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 1568910860979031381, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1512880700658923055, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 1568910860979031381, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609851544196757555, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -1512880700658923055, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
     - target: {fileID: 4368125905885784577, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -107829,6 +107986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269825996}
   - component: {fileID: 1269825995}
+  - component: {fileID: 1269825997}
   m_Layer: 0
   m_Name: Scene Data Manager
   m_TagString: Untagged
@@ -107866,6 +108024,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269825997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269825994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90eedae3da04ac14299b8c584d082049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetKey: 114
 --- !u!1001 &1275031777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108500,6 +108671,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 210762397962887354, guid: 17c98a9a7bae3d648b0eb8aba700fc73, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 210762397962887354, guid: 17c98a9a7bae3d648b0eb8aba700fc73, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 551428195707312720, guid: 17c98a9a7bae3d648b0eb8aba700fc73, type: 3}
       propertyPath: m_Name
       value: Pantolonsuz Adam
@@ -115509,6 +115688,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
+    - target: {fileID: 1511072682878262563, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6391232891274317012, guid: 6d12f903b55ebc3479d19fb8caae92f4, type: 3}
       propertyPath: m_Name
       value: LeBronJames (1)
@@ -116700,6 +116887,57 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8be6083da5fe22b42b051063f3f5588c, type: 3}
+--- !u!1 &1822635130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8893287330390304263, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
+  m_PrefabInstance: {fileID: 124001518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1822635131
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822635130}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1.3367724}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.09375, y: 2.40625}
+    newSize: {x: 1.09375, y: 2.40625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.09375, y: 2.138955}
+  m_EdgeRadius: 0
 --- !u!4 &1861666113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3074952994962962852, guid: 8be6083da5fe22b42b051063f3f5588c, type: 3}
@@ -124194,6 +124432,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 35996843844771571, guid: 2ca1e7c3721e9764194feafb928e9229, type: 3}
+      propertyPath: m_Volume
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 81701134195975866, guid: 2ca1e7c3721e9764194feafb928e9229, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.22
@@ -124238,6 +124480,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1795321006}
+    - target: {fileID: 3894757731828727182, guid: 2ca1e7c3721e9764194feafb928e9229, type: 3}
+      propertyPath: singingClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d972b32a02984f4087f7a8d0a16e568, type: 3}
     - target: {fileID: 7079582173456714806, guid: 2ca1e7c3721e9764194feafb928e9229, type: 3}
       propertyPath: m_Name
       value: "M\xFCzik Dinleyen Maymun"
@@ -124272,3 +124518,4 @@ SceneRoots:
   - {fileID: 8789037378153890144}
   - {fileID: 2122234103}
   - {fileID: 1269825996}
+  - {fileID: 124001518}

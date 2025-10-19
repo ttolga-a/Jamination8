@@ -12,6 +12,7 @@ public class SceneDataManager : MonoBehaviour
 
     private void Awake()
     {
+        // Singleton koruma
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -20,6 +21,9 @@ public class SceneDataManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        // 🧠 Kaydedilmiş ilerlemeyi yükle
+        LoadProgress();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -31,6 +35,7 @@ public class SceneDataManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        // Oyuncu harita sahnesine dönünce konumunu geri yükle
         if (scene.name == "Map")
         {
             var player = FindFirstObjectByType<Player>();
@@ -45,7 +50,7 @@ public class SceneDataManager : MonoBehaviour
         lastSceneName = currentScene;
     }
 
-    // ✅ Kalıcı hale getirmek istersen (PlayerPrefs ile)
+    // ✅ Bilgileri kalıcı hale getir
     public void SaveProgress()
     {
         PlayerPrefs.SetInt("WiseMonkeyDone", wiseMonkeyDone ? 1 : 0);

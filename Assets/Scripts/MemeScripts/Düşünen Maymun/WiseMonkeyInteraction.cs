@@ -13,11 +13,8 @@ public class WiseMonkeyInteraction : MonoBehaviour
     [SerializeField] private AudioClip monkeySound;
     [SerializeField] private GameObject pressFText;
 
-    [Header("Remaining Time Details")]
-    [SerializeField] private RemainingTimeManager remainingTimeManager;
-    [SerializeField] private float aValue;
-    [SerializeField] private float bValue;
-
+    [Header("GameObject to Remove After First Dialogue")]
+    [SerializeField] private GameObject objectToRemove; // 🧱 İlk konuşmadan sonra silinecek obje
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -40,10 +37,6 @@ public class WiseMonkeyInteraction : MonoBehaviour
     private bool isInteracting = false;
     private bool isTransitioning = false;
 
-    void Awake()
-    {
-        remainingTimeManager = FindAnyObjectByType<RemainingTimeManager>();
-    }
     private void Start()
     {
         if (pressFText) pressFText.SetActive(false);
@@ -54,6 +47,13 @@ public class WiseMonkeyInteraction : MonoBehaviour
             Color c = fadeImage.color;
             c.a = 0;
             fadeImage.color = c;
+        }
+
+        // 🧠 Eğer maymun olayı zaten yapılmışsa, objeyi sahneden kaldır
+        if (SceneDataManager.Instance != null && SceneDataManager.Instance.wiseMonkeyDone)
+        {
+            if (objectToRemove != null)
+                Destroy(objectToRemove);
         }
     }
 
@@ -130,7 +130,13 @@ public class WiseMonkeyInteraction : MonoBehaviour
         {
             SceneDataManager.Instance.wiseMonkeyDone = true;
             SceneDataManager.Instance.SavePlayerData(player.transform.position, SceneManager.GetActiveScene().name);
-            SceneDataManager.Instance.SaveProgress(); // kalıcı hale getir
+            SceneDataManager.Instance.SaveProgress();
+        }
+
+        // 🚀 Prefab sahneden kaldır
+        if (objectToRemove != null)
+        {
+            Destroy(objectToRemove);
         }
 
         yield return StartCoroutine(Fade(0f, 1f, fadeDuration));
