@@ -3236,6 +3236,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1748051538}
+    - target: {fileID: 2461974374122489944, guid: 52d0e93247e47fb41911f7c1a31815b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410012320664677593, guid: 52d0e93247e47fb41911f7c1a31815b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -1512880700658923055, guid: ab2d03860756abf4aa6a56bd1bba99d0, type: 2}
     - target: {fileID: 3460161453449430640, guid: 52d0e93247e47fb41911f7c1a31815b7, type: 3}
       propertyPath: m_Name
       value: Bomb
@@ -3283,7 +3291,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2461974374122489944, guid: 52d0e93247e47fb41911f7c1a31815b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 52d0e93247e47fb41911f7c1a31815b7, type: 3}
 --- !u!222 &2203103469424099637
 CanvasRenderer:
@@ -3976,9 +3987,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 282766185692471656, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1122000754816353808, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
       propertyPath: m_Name
       value: BombDefuser
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192126818672256409, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3355748681369182889, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
       propertyPath: player
@@ -4000,6 +4019,10 @@ PrefabInstance:
       propertyPath: symbolClue
       value: 
       objectReference: {fileID: 1851108522}
+    - target: {fileID: 4980859848167835236, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7034806628747376013, guid: ae865ca7691efdd4581f04c2e66b766b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
