@@ -114,8 +114,7 @@ public class BombDefuseManager : MonoBehaviour
 
         Debug.Log("Doðru Kombinasyon: " + correctShapeIndices[0] + ", " + correctShapeIndices[1] + ", " + correctShapeIndices[2]);
         symbolClue.SetupSymbolClue();
-        
-
+        CluesManager.instance.SetupSymbolClueUI();
         UpdateAllDisplayShapes();
     }
 
@@ -143,7 +142,6 @@ public class BombDefuseManager : MonoBehaviour
     {
 
         playerSelectedIndices[slotIndex]--;
-
 
         if (playerSelectedIndices[slotIndex] < 0)
         {
@@ -192,7 +190,8 @@ public class BombDefuseManager : MonoBehaviour
             availableIndices.RemoveAt(randomIndex);
         }
 
-        seqClue.SetupSymbolClue();
+        seqClue.SetupSequenceClue();
+        CluesManager.instance.SetupSequenceClueUI();
         Debug.Log($"Doðru Sýralama: {correctSequence[0]}, {correctSequence[1]}, {correctSequence[2]}");
     }
 
