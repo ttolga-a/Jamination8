@@ -18,6 +18,6 @@ public class FrequancyClue : Clues
 
         float randomMax = randomMin + rangeWidth;
 
-        frequancyText.text = $"Frequancy: {randomMin:F2} - {randomMax:F2}";
+        frequancyText.text = $"{randomMin:F2} - {randomMax:F2}";
     }
 }
