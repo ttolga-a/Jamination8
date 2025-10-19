@@ -1042,6 +1042,53 @@ PrefabInstance:
       addedObject: {fileID: 554873006}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15b948a4f63232440832736b196de8cc, type: 3}
+--- !u!1 &1080490620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1080490622}
+  - component: {fileID: 1080490621}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1080490621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080490620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9729e4171f9465b4c816cf4bb73c0a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuMusic: {fileID: 0}
+  gameSceneMusic: {fileID: 0}
+  miniGameSceneMusic: {fileID: 0}
+--- !u!4 &1080490622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080490620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 165.50787, y: 7.9743266, z: -0.39850563}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1119488757 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6874926733579327005, guid: 15b948a4f63232440832736b196de8cc, type: 3}
@@ -1993,11 +2040,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5804767035715724822, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
       propertyPath: m_text
-      value: Settings
+      value: Ayarlar
       objectReference: {fileID: 0}
     - target: {fileID: 5804767035715724822, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
       propertyPath: m_fontSize
-      value: 64.25
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 5804767035715724822, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
       propertyPath: m_fontAsset
@@ -2280,6 +2327,10 @@ PrefabInstance:
     - target: {fileID: 2138588402030903790, guid: 15b948a4f63232440832736b196de8cc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -265
+      objectReference: {fileID: 0}
+    - target: {fileID: 2802559617800905292, guid: 15b948a4f63232440832736b196de8cc, type: 3}
+      propertyPath: m_text
+      value: Ayarlar
       objectReference: {fileID: 0}
     - target: {fileID: 3365685101388991875, guid: 15b948a4f63232440832736b196de8cc, type: 3}
       propertyPath: m_IsActive
@@ -2571,6 +2622,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5804767035715724822, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_text
+      value: Oyna
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804767035715724822, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804767035715724822, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
       propertyPath: m_fontColor.b
       value: 0.16470589
       objectReference: {fileID: 0}
@@ -2615,3 +2674,4 @@ SceneRoots:
   - {fileID: 1375601646}
   - {fileID: 2145193827}
   - {fileID: 919220621}
+  - {fileID: 1080490622}

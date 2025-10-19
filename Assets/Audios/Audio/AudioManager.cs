@@ -3,27 +3,28 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    // Singleton pattern: Bu script'ten sadece bir tane olmasýný saðlar.
+    // Singleton pattern: Bu script'ten sadece bir tane olmasï¿½nï¿½ saï¿½lar.
     public static AudioManager instance;
 
     [Header("Audio Clips")]
     public AudioClip mainMenuMusic;
     public AudioClip gameSceneMusic;
+    public AudioClip miniGameSceneMusic;
 
     private AudioSource audioSource;
-    private const string VOLUME_KEY = "MusicVolume"; // PlayerPrefs için anahtar
+    private const string VOLUME_KEY = "MusicVolume"; // PlayerPrefs iï¿½in anahtar
 
     void Awake()
     {
-        // Singleton'ý kur
+        // Singleton'ï¿½ kur
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Bu objenin sahne geçiþlerinde yok olmamasýný saðla
+            DontDestroyOnLoad(gameObject); // Bu objenin sahne geï¿½iï¿½lerinde yok olmamasï¿½nï¿½ saï¿½la
         }
         else
         {
-            Destroy(gameObject); // Eðer zaten bir AudioManager varsa, bu yenisini yok et
+            Destroy(gameObject); // Eï¿½er zaten bir AudioManager varsa, bu yenisini yok et
             return;
         }
 
@@ -32,18 +33,18 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        // Kayýtlý ses seviyesini yükle ve uygula
-        float savedVolume = PlayerPrefs.GetFloat(VOLUME_KEY, 0.75f); // Eðer kayýtlý veri yoksa varsayýlan 0.75 olsun
+        // Kayï¿½tlï¿½ ses seviyesini yï¿½kle ve uygula
+        float savedVolume = PlayerPrefs.GetFloat(VOLUME_KEY, 0.75f); // Eï¿½er kayï¿½tlï¿½ veri yoksa varsayï¿½lan 0.75 olsun
         SetMusicVolume(savedVolume);
 
         // SceneManager event'ine abone ol
         SceneManager.sceneLoaded += OnSceneLoaded;
 
-        // Ýlk sahnenin müziðini manuel olarak çal (çünkü OnSceneLoaded bu sahne için tetiklenmeyebilir)
+        // ï¿½lk sahnenin mï¿½ziï¿½ini manuel olarak ï¿½al (ï¿½ï¿½nkï¿½ OnSceneLoaded bu sahne iï¿½in tetiklenmeyebilir)
         PlayMusicForScene(SceneManager.GetActiveScene());
     }
 
-    // Bir sahne yüklendiðinde bu fonksiyon çaðrýlýr
+    // Bir sahne yï¿½klendiï¿½inde bu fonksiyon ï¿½aï¿½rï¿½lï¿½r
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         PlayMusicForScene(scene);
@@ -53,17 +54,17 @@ public class AudioManager : MonoBehaviour
     {
         AudioClip clipToPlay = null;
 
-        // Sahne adýna göre doðru müziði seç
-        if (scene.name == "MainMenu") // SENÝN ANA MENÜ SAHNENÝN ADI NEYSE ONU YAZ
+        // Sahne adï¿½na gï¿½re doï¿½ru mï¿½ziï¿½i seï¿½
+        if (scene.name == "MainMenu") // SENï¿½N ANA MENï¿½ SAHNENï¿½N ADI NEYSE ONU YAZ
         {
             clipToPlay = mainMenuMusic;
         }
-        else if (scene.name == "TolgaTestScene") // SENÝN OYUN SAHNENÝN ADI NEYSE ONU YAZ
+        else if (scene.name == "Map") // SENï¿½N OYUN SAHNENï¿½N ADI NEYSE ONU YAZ
         {
             clipToPlay = gameSceneMusic;
         }
 
-        // Eðer çalýnan müzik zaten doðruysa tekrar baþlatma
+
         if (clipToPlay != null && audioSource.clip != clipToPlay)
         {
             audioSource.clip = clipToPlay;
@@ -71,7 +72,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Slider'dan gelen deðeri alýp sesi ayarlar ve kaydeder
     public void SetMusicVolume(float volume)
     {
         audioSource.volume = volume;
@@ -79,7 +79,6 @@ public class AudioManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    // Program kapatýlýrken event'ten aboneliði kaldýr (hafýza sýzýntýsýný önler)
     void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
