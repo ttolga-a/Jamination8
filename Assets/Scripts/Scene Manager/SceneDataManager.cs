@@ -8,7 +8,7 @@ public class SceneDataManager : MonoBehaviour
     [Header("Kaydedilecek Veriler")]
     public Vector3 playerPosition;
     public string lastSceneName;
-    public bool wiseMonkeyDone = false; // ✅ Maymun etkileşimi tamamlandı mı?
+    public bool wiseMonkeyDone = false;
 
     private void Awake()
     {

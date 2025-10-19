@@ -63,6 +63,8 @@ public class AudioManager : MonoBehaviour
         {
             clipToPlay = gameSceneMusic;
         }
+        else if (scene.name == "Mini Game Scene")
+            clipToPlay = gameSceneMusic;
 
 
         if (clipToPlay != null && audioSource.clip != clipToPlay)
