@@ -150,6 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 7511022741979610412}
   respawnTime: 1
+  moveSpeed: 0
+  moveDistance: 0
 --- !u!1 &5761152028563201781
 GameObject:
   m_ObjectHideFlags: 0
