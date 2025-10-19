@@ -349,7 +349,7 @@ Transform:
   m_GameObject: {fileID: 18740494}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.6, y: -1.6, z: -10}
+  m_LocalPosition: {x: 165.7, y: -47.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -104603,11 +104603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2149551713457653508, guid: 14a609cc3d257a740be16b1849fe6b93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.6
+      value: 165.7
       objectReference: {fileID: 0}
     - target: {fileID: 2149551713457653508, guid: 14a609cc3d257a740be16b1849fe6b93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6
+      value: -47.6
       objectReference: {fileID: 0}
     - target: {fileID: 2149551713457653508, guid: 14a609cc3d257a740be16b1849fe6b93, type: 3}
       propertyPath: m_LocalPosition.z
@@ -104897,6 +104897,57 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8be6083da5fe22b42b051063f3f5588c, type: 3}
+--- !u!1 &668423537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1858514545251850331, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+  m_PrefabInstance: {fileID: 1191968099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &668423541
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668423537}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3311111, y: 1.9088889}
+    newSize: {x: 1.3311111, y: 1.9088889}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.3311111, y: 1.9088889}
+  m_EdgeRadius: 0
 --- !u!4 &672561764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3074952994962962852, guid: 8be6083da5fe22b42b051063f3f5588c, type: 3}
@@ -105518,7 +105569,7 @@ Transform:
   m_GameObject: {fileID: 811932238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.6, y: -1.6, z: -10}
+  m_LocalPosition: {x: 165.7, y: -47.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106894,9 +106945,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 733749998}
     - target: {fileID: 1194096918750263331, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: fullDialogue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194096918750263331, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 1665710034}
+    - target: {fileID: 1194096918750263331, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: firstDialogue
+      value: "Sen bu ipucunu alamazs\u0131n!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194096918750263331, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: secondDialogue
+      value: "Hop al\u0131rm\u0131\u015Fs\u0131n baba ka\xE7ar"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194096918750263331, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      propertyPath: physicalCollider
+      value: 
+      objectReference: {fileID: 668423541}
     - target: {fileID: 1568910860979031381, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
       propertyPath: m_fontSize
       value: 30.6
@@ -106981,6 +107048,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1858514545251850331, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 668423541}
     - targetCorrespondingSourceObject: {fileID: 2092286214127657990, guid: 42eea7a922ca9144ea6b2e7a8772f3c4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -108695,6 +108765,15 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 1665710034}
+    - target: {fileID: 5664874200033857157, guid: 17c98a9a7bae3d648b0eb8aba700fc73, type: 3}
+      propertyPath: firstDialogue
+      value: "S\u0131radaki hint yukar\u0131da \xE7i\xE7eklerin aras\u0131nda kel
+        adam oraya koydu"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664874200033857157, guid: 17c98a9a7bae3d648b0eb8aba700fc73, type: 3}
+      propertyPath: secondDialogue
+      value: "Sen bu bombay\u0131 \xE7\xF6zemezsen ben de buraya i\u015Ferim"
+      objectReference: {fileID: 0}
     - target: {fileID: 5683797726741186820, guid: 17c98a9a7bae3d648b0eb8aba700fc73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
