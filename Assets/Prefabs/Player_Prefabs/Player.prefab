@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1248493339855280884}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 2.67, z: 0}
+  m_LocalPosition: {x: 3.5, y: 3.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -87,12 +87,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddcb76b1ec61ed4d9e04de060ddb95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashCooldownMask: {fileID: 0}
   moveSpeed: 10
   jumpForce: 12
   inAirMoveMultiplier: 0.7
   wallSlideMultiplier: 0.3
   dashDuration: 0.25
   dashSpeed: 20
+  dashCooldown: 2
   wallJumpForce: {x: 6, y: 8}
   groundCheckDistance: 1.1
   wallCheckDistance: 0.41
@@ -102,7 +104,6 @@ MonoBehaviour:
   primaryWallCheck: {fileID: 1176134689696097807}
   secondaryWallCheck: {fileID: 6830785466182958904}
   groundCheck: {fileID: 8366907743629200967}
-  groundDetected: 0
 --- !u!50 &4480435178580673736
 Rigidbody2D:
   serializedVersion: 5
@@ -229,7 +230,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2237285443321258136, guid: 7eb3a312528d8be429c1bbe8149c9fd1, type: 3}
+  m_Sprite: {fileID: 2237285443321258136, guid: 7ba9068ab85e85845a484c6b20401fef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

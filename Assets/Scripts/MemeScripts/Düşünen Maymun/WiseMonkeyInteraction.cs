@@ -7,24 +7,27 @@ using UnityEngine.SceneManagement;
 public class WiseMonkeyInteraction : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Collider2D triggerZone;    // Etkileşim alanı
-    [SerializeField] private Player player;             // 🔹 Player referansı (Player.cs)
-    [SerializeField] private AudioSource audioSource;   // Ses kaynağı
-    [SerializeField] private AudioClip monkeySound;     // Maymun sesi
-    [SerializeField] private GameObject pressFText;     // “F’ye bas” yazısı
+    [SerializeField] private Collider2D triggerZone;
+    [SerializeField] private Player player;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip monkeySound;
+    [SerializeField] private GameObject pressFText;
 
     [Header("Dialogue UI")]
-    [SerializeField] private GameObject dialoguePanel;  // Konuşma paneli
-    [SerializeField] private TMP_Text dialogueText;     // TMP Text objesi
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private TMP_Text dialogueText;
     [TextArea]
-    [SerializeField] private string monkeyDialogue = 
-        "Bilgelik zordur dostum... Ama denemek ister misin?"; // Maymunun sözü
+    [SerializeField] private string firstDialogue =
+        "Bilgelik zordur dostum... Ama denemek ister misin?";
+    [TextArea]
+    [SerializeField] private string secondDialogue =
+        "Sen zaten bilgelik sınavını geçtin dostum! Artık yoluna devam et...";
 
     [Header("Fade Settings")]
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadeDuration = 1.5f;
-    [SerializeField] private float typeDuration = 3f;        // Yazı harf harf süresi
-    [SerializeField] private float dialogueHoldTime = 2f;    // Yazı ekranda kalma süresi
+    [SerializeField] private float typeDuration = 3f;
+    [SerializeField] private float dialogueHoldTime = 2f;
     [SerializeField] private string sceneToLoad = "MiniGameScene";
 
     private bool playerInRange = false;
@@ -36,7 +39,6 @@ public class WiseMonkeyInteraction : MonoBehaviour
         if (pressFText) pressFText.SetActive(false);
         if (dialoguePanel) dialoguePanel.SetActive(false);
 
-        // Fade image başlangıçta görünmez olsun
         if (fadeImage)
         {
             Color c = fadeImage.color;
@@ -51,7 +53,6 @@ public class WiseMonkeyInteraction : MonoBehaviour
 
         bool inside = triggerZone && triggerZone.bounds.Contains(player.transform.position);
 
-        // 🎯 Oyuncu alana girerse “F’ye bas” yazısı çıksın
         if (inside && !playerInRange)
         {
             playerInRange = true;
@@ -61,13 +62,10 @@ public class WiseMonkeyInteraction : MonoBehaviour
         {
             playerInRange = false;
             if (pressFText) pressFText.SetActive(false);
-
-            // 🔓 Oyuncu alanı terk ederse kontrol geri gelsin
             if (player != null && player.isLocked)
                 player.UnlockPlayer();
         }
 
-        // 🔘 F tuşu ile etkileşimi başlat
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             StartCoroutine(MonkeyDialogueRoutine());
@@ -78,54 +76,60 @@ public class WiseMonkeyInteraction : MonoBehaviour
     {
         isInteracting = true;
 
-        // 🔒 Oyuncuyu kilitle (hareket etmesin)
         if (player != null)
             player.LockPlayer();
 
-        // “F’ye bas” yazısını gizle
         if (pressFText)
             pressFText.SetActive(false);
 
-        // 🎵 Maymun sesi çal
         if (audioSource && monkeySound)
         {
             audioSource.clip = monkeySound;
             audioSource.Play();
         }
 
-        // 🗨️ Diyalog panelini aç
         dialoguePanel.SetActive(true);
         dialogueText.text = "";
 
-        // Harf harf yazı efekti
-        float delay = typeDuration / monkeyDialogue.Length;
-        foreach (char c in monkeyDialogue)
+        bool alreadyDone = SceneDataManager.Instance != null && SceneDataManager.Instance.wiseMonkeyDone;
+
+        string activeDialogue = alreadyDone ? secondDialogue : firstDialogue;
+        float delay = typeDuration / activeDialogue.Length;
+
+        foreach (char c in activeDialogue)
         {
             dialogueText.text += c;
             yield return new WaitForSeconds(delay);
         }
 
-        // Yazı tamamlandıktan sonra biraz bekle
         yield return new WaitForSeconds(dialogueHoldTime);
-
-        // Diyalog panelini kapat
         dialoguePanel.SetActive(false);
 
-        // 🎬 Fade-out başlat
+        // Eğer zaten yapılmışsa sahne geçme
+        if (alreadyDone)
+        {
+            if (player != null)
+                player.UnlockPlayer();
+
+            isInteracting = false;
+            yield break;
+        }
+
+        // 🧠 İlk defa yapılıyorsa kaydet
+        if (SceneDataManager.Instance != null)
+        {
+            SceneDataManager.Instance.wiseMonkeyDone = true;
+            SceneDataManager.Instance.SavePlayerData(player.transform.position, SceneManager.GetActiveScene().name);
+            SceneDataManager.Instance.SaveProgress(); // kalıcı hale getir
+        }
+
         yield return StartCoroutine(Fade(0f, 1f, fadeDuration));
-
-        // 🔓 Yeni sahneye geçmeden önce oyuncuyu serbest bırak (opsiyonel güvenlik)
-        if (player != null && player.isLocked)
-            player.UnlockPlayer();
-
-        // 🎮 Yeni sahneye geç
         SceneManager.LoadScene(sceneToLoad);
     }
 
     private IEnumerator Fade(float start, float end, float duration)
     {
         isTransitioning = true;
-
         float time = 0;
         while (time < duration)
         {
@@ -136,7 +140,6 @@ public class WiseMonkeyInteraction : MonoBehaviour
             yield return null;
         }
 
-        // Son değeri garantiye al
         Color final = fadeImage.color;
         final.a = end;
         fadeImage.color = final;

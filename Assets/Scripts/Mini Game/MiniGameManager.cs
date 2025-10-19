@@ -83,7 +83,7 @@ public class MiniGameManager : MonoBehaviour
             actionButtonText.text = "Devam Et";
 
             actionButton.onClick.RemoveAllListeners();
-            actionButton.onClick.AddListener(() => LoadNextScene("GameScene"));
+            actionButton.onClick.AddListener(() => LoadNextScene("Map"));
         }
         else // kaybetme
         {
