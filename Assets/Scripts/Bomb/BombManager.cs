@@ -68,6 +68,7 @@ public class BombManager : MonoBehaviour
             bombRemainingTime--;
         }
         OpenEndScreen(false);
+        
     }
 
     public void OpenEndScreen(bool IsWin)
@@ -78,7 +79,7 @@ public class BombManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Kaybettin");
+            Ingame_UI.instance.endGameText.text = "BOMBA PATLADI";
         }
         endUI.SetActive(true);
         Time.timeScale = 0;
@@ -120,12 +121,12 @@ public class BombManager : MonoBehaviour
         if (addingValue > 0)
         {
             Ingame_UI.instance.bombUnstableText.color = Color.green;
-            Ingame_UI.instance.bombUnstableText.text = "Bomb is so unstable and it gives +" + addingValue + " seconds!!!!";
+            Ingame_UI.instance.bombUnstableText.text = "Bomba dengesizlesti, +" + addingValue + " saniye eklendi!!!";
         }
         else if(addingValue < 0)
         {
             Ingame_UI.instance.bombUnstableText.color = Color.red;
-            Ingame_UI.instance.bombUnstableText.text = "Bomb is so unstable and it gives " + addingValue + " seconds!!!!";
+            Ingame_UI.instance.bombUnstableText.text = "Bomba dengesizlesti, " + addingValue + " saniye azaldi!!!!";
         }
 
         StartCoroutine(BombUnstableTextCo());
