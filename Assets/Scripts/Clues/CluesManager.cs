@@ -9,29 +9,24 @@ public class CluesManager : MonoBehaviour
     [Header("WireCLue")]
     [SerializeField] private Image clueShowLoc;
     [SerializeField] private Sprite[] wireClueSprites;
+    [SerializeField] private GameObject hasWireClueUI;
     public bool hasFoundWireClue { get; private set; }
 
     [Header("SymbolClue")]
     [SerializeField] private Image[] symbolLocations;
     [SerializeField] private Sprite[] symbolSprites;
+    [SerializeField] private GameObject hasSymbomClueUI;
     public bool hasFoundSymbolClue { get; private set; }
 
     [Header("SequenceClue")]
     [SerializeField] private Image[] seqLocations;
     [SerializeField] private Sprite[] seqSprites;
+    [SerializeField] private GameObject hasSeqClueUI;
     public bool hasFoundSequenceClue { get; private set; }
 
     private void Awake()
     {
-        if (instance != null && instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+        instance = this;
     }
 
     public void SetupWireClueUI(int id)
@@ -50,19 +45,28 @@ public class CluesManager : MonoBehaviour
     public void MarkWireClueAsFound()
     {
         if (!hasFoundWireClue)
+        {
             hasFoundWireClue = true;
+            hasWireClueUI.SetActive(true);
+        }
     }
 
     public void MarkSymbolClueAsFound()
     {
         if (!hasFoundSymbolClue)
+        {
             hasFoundSymbolClue = true;
+            hasSymbomClueUI.SetActive(true);
+        }
     }
 
     public void MarkSequenceClueAsFound()
     {
         if (!hasFoundSequenceClue)
+        {
             hasFoundSequenceClue = true;
+            hasSeqClueUI.SetActive(true);
+        }
     }
 
     public void SetupSequenceClueUI()
