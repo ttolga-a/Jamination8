@@ -1297,6 +1297,34 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.8666667
       objectReference: {fileID: 0}
+    - target: {fileID: 3782360341910348071, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782360341910348071, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782360341910348071, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 370849122}
+    - target: {fileID: 3782360341910348071, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782360341910348071, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782360341910348071, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MainMenuButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782360341910348071, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4332357204764673777, guid: b250d8b181e8dd74e83397a1c662afb4, type: 3}
       propertyPath: m_Name
       value: PlayButton

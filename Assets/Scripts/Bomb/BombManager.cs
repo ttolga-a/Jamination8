@@ -7,6 +7,7 @@ public class BombManager : MonoBehaviour
     public static BombManager instance;
     public Player player;
 
+    [SerializeField] private GameObject endUI;
     [SerializeField] private int bombFullTime = 300;
     public GameObject pressFText;
     private bool playerInRange = false;
@@ -19,6 +20,9 @@ public class BombManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
+        player.UnlockPlayer();
+
         bombRemainingTime = bombFullTime;
         StartCoroutine(StartCountdown());
         HandleUnstableBomb();
@@ -36,6 +40,11 @@ public class BombManager : MonoBehaviour
             else
                 player.UnlockPlayer();
         }
+
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            endUI.SetActive(true);
+        }
     }
 
     private IEnumerator StartCountdown()
@@ -45,7 +54,22 @@ public class BombManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             bombRemainingTime--;
         }
-        Debug.Log("Süre Bitti! Bomba patladý!");
+        OpenEndScreen(false);
+    }
+
+    public void OpenEndScreen(bool IsWin)
+    {
+        if (IsWin)
+        {
+            Debug.Log("win");
+        }
+        else
+        {
+            Debug.Log("Kaybettin");
+        }
+        endUI.SetActive(true);
+        Time.timeScale = 0;
+        player.LockPlayer();
     }
 
     public void BombTimeChanger(int TimeValue)

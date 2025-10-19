@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ingame_UI : MonoBehaviour
 {
@@ -70,5 +71,15 @@ public class Ingame_UI : MonoBehaviour
     {
         settingsPanel.SetActive(!settingsPanel.activeSelf);
         pauseUI.SetActive(!pauseUI.activeSelf);
+    }
+
+    public void PlayAgainButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

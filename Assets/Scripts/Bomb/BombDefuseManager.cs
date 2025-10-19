@@ -62,7 +62,7 @@ public class BombDefuseManager : MonoBehaviour
     {
         if (correctAnswerNeeded == 0)
         {
-            Debug.Log("Oyunu Kazandýn");
+            BombManager.instance.OpenEndScreen(true);
         }
     }
 
