@@ -39,7 +39,13 @@ public class CluesManager : MonoBehaviour
         clueShowLoc.sprite = wireClueSprites[id];
     }
 
-
+    public void SetupSymbolClueUI()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            symbolLocations[i].sprite = symbolSprites[BombDefuseManager.instance.correctShapeIndices[i]];
+        }
+    }
 
     public void MarkWireClueAsFound()
     {
@@ -57,5 +63,13 @@ public class CluesManager : MonoBehaviour
     {
         if (!hasFoundSequenceClue)
             hasFoundSequenceClue = true;
+    }
+
+    public void SetupSequenceClueUI()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            seqLocations[i].sprite = seqSprites[BombDefuseManager.instance.correctSequence[i]];   
+        }
     }
 }
