@@ -565,6 +565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressFText: {fileID: 586731785990720143}
   cluePanel: {fileID: 4090221111903276217}
+  player: {fileID: 0}
   frequancyText: {fileID: 4258162091587462688}
 --- !u!1 &6087146952476093787
 GameObject:
