@@ -13,6 +13,12 @@ public class WiseMonkeyInteraction : MonoBehaviour
     [SerializeField] private AudioClip monkeySound;
     [SerializeField] private GameObject pressFText;
 
+    [Header("Remaining Time Details")]
+    [SerializeField] private RemainingTimeManager remainingTimeManager;
+    [SerializeField] private float aValue;
+    [SerializeField] private float bValue;
+
+
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
@@ -34,6 +40,10 @@ public class WiseMonkeyInteraction : MonoBehaviour
     private bool isInteracting = false;
     private bool isTransitioning = false;
 
+    void Awake()
+    {
+        remainingTimeManager = FindAnyObjectByType<RemainingTimeManager>();
+    }
     private void Start()
     {
         if (pressFText) pressFText.SetActive(false);

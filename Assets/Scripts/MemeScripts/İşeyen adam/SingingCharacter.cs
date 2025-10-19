@@ -14,7 +14,12 @@ public class SingingCharacterSerialized : MonoBehaviour
     [SerializeField] private GameObject pressFText;        // “F’ye bas” UI objesi
     [SerializeField] private GameObject dialoguePanel;     // Konuşma paneli
     [SerializeField] private TMP_Text dialogueText;        // TMP Text alanı
-    [TextArea] [SerializeField] private string fullDialogue = "Bombaclat! Mikrofon bende!";
+    [TextArea][SerializeField] private string fullDialogue = "Bombaclat! Mikrofon bende!";
+    
+    [Header("Remaining Time Details")]
+    [SerializeField] private RemainingTimeManager remainingTimeManager;
+    [SerializeField] private float aValue;
+    [SerializeField] private float bValue;
 
     [Header("Settings")]
     [SerializeField] private float maxHearingDistance = 10f;   // 10 birimden duyulacak
@@ -24,10 +29,16 @@ public class SingingCharacterSerialized : MonoBehaviour
     private bool isTalking = false;
     private bool isSinging = false;
 
+    void Awake()
+    {
+        remainingTimeManager = FindAnyObjectByType<RemainingTimeManager>();
+    }
+    
     private void Start()
     {
         if (pressFText) pressFText.SetActive(false);
         if (dialoguePanel) dialoguePanel.SetActive(false);
+
 
         if (audioSource)
         {

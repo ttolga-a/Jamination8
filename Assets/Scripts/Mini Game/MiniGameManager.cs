@@ -14,6 +14,7 @@ public class MiniGameManager : MonoBehaviour
     public GameObject resultPanel;
     public Button actionButton;
     public TMP_Text actionButtonText;
+    public TMP_Text infoText;
     public Button startButton;
 
     [Header("Ayarlar")]
@@ -53,10 +54,11 @@ public class MiniGameManager : MonoBehaviour
     public void StartGame()
     {
         gameActive = true;
+        infoText.gameObject.SetActive(false);
         startButton.gameObject.SetActive(false);
         scoreText.gameObject.SetActive(true);
         timerText.gameObject.SetActive(true);
-        currentScore = 0;
+        currentScore = 0;   
         currentTime = gameDuration;
         scoreText.text = $"Puan: {currentScore}";
         timerText.text = $"Süre: {Mathf.CeilToInt(currentTime)}";

@@ -23,6 +23,11 @@ public class BoomCharacterInteraction : MonoBehaviour
     [SerializeField] private float typeDuration = 7f;   // Harf harf yazılma süresi
     [SerializeField] private float fadeDuration = 2f;   // Karakterin solma süresi
 
+    [Header("Remaining Time Details")]
+    [SerializeField] private RemainingTimeManager remainingTimeManager;
+    [SerializeField] private float aValue;
+    [SerializeField] private float bValue;
+
     private bool playerInRange = false;
     private bool isInteracting = false;
     private bool hasFadedOut = false;
@@ -30,9 +35,14 @@ public class BoomCharacterInteraction : MonoBehaviour
     private SpriteRenderer[] spriteRenderers;
     private Color[] originalColors;
 
+    void Awake()
+    {
+        remainingTimeManager = FindAnyObjectByType<RemainingTimeManager>();
+    }
     private void Start()
     {
         spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+
         originalColors = new Color[spriteRenderers.Length];
         for (int i = 0; i < spriteRenderers.Length; i++)
             originalColors[i] = spriteRenderers[i].color;
