@@ -7,6 +7,11 @@ public class MainMenuButtons : MonoBehaviour
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject creditPanel;
 
+    private void Start()
+    {
+
+    }
+
     public void OpenSettings()
     {
         settingsPanel.SetActive(!settingsPanel.activeSelf);

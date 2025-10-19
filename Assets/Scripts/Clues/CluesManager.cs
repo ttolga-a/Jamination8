@@ -29,6 +29,10 @@ public class CluesManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+    }
+
     public void SetupWireClueUI(int id)
     {
         clueShowLoc.sprite = wireClueSprites[id];
