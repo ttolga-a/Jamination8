@@ -4,6 +4,7 @@ using UnityEngine;
 public class SpikeTrap : MonoBehaviour
 {
     public Transform respawnPoint;
+    public Player playerx;
     [SerializeField] private float respawnTime = 1f;
 
     [Header("Movement Settings")]
@@ -43,6 +44,7 @@ public class SpikeTrap : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            BombManager.instance.BombTimeChanger(Random.Range(-25, -10));
             StartCoroutine(RespawnPlayer(other.gameObject));
         }
     }
@@ -50,11 +52,13 @@ public class SpikeTrap : MonoBehaviour
     private IEnumerator RespawnPlayer(GameObject player)
     {
         player.SetActive(false);
+        playerx.LockPlayer();
 
         yield return new WaitForSeconds(respawnTime);
 
         player.transform.position = respawnPoint.position;
 
         player.SetActive(true);
+        playerx.UnlockPlayer();
     }
 }

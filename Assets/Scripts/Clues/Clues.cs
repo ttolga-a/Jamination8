@@ -1,11 +1,23 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Clues : MonoBehaviour
 {
+    private Animator anim;
+
     public GameObject pressFText;
     public GameObject cluePanel;
-
+    public Player player;
     private bool playerInRange = false;
+
+    [Space]
+    [Header("Clue Specific Event")]
+    public UnityEvent OnClueActivated;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void Start()
     {
@@ -18,6 +30,17 @@ public class Clues : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             cluePanel.SetActive(!cluePanel.activeSelf);
+
+            if (cluePanel.activeSelf)
+            {
+                player.LockPlayer();
+
+                OnClueActivated.Invoke();
+            }
+            else
+            {
+                player.UnlockPlayer();
+            }
         }
     }
 
@@ -26,6 +49,7 @@ public class Clues : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = true;
+            anim.SetBool("isPlayerOn", playerInRange);
             if (pressFText)
                 pressFText.SetActive(true);
         }
@@ -36,6 +60,7 @@ public class Clues : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
+            anim.SetBool("isPlayerOn", playerInRange);
             if (pressFText)
                 pressFText.SetActive(false);
         }

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e2819d97fba7b7a478292c683c3fdc36
+guid: 7c95e11a698dd0547a15f06a1aeca37a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5643105228771564274
-    second: Sprite-0003_0
+      213: -2515856347621907295
+    second: black_cable_0
   - first:
-      213: 6719169754601135636
-    second: Sprite-0003_1
+      213: 4796535629444270422
+    second: black_cable_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0003_0
+      name: black_cable_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 81
+        y: 73
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e05ebe061b9afa1b0800000000000000
-      internalID: -5643105228771564274
+      spriteID: 1a4a51e3bf1e51dd0800000000000000
+      internalID: -2515856347621907295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0003_1
+      name: black_cable_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 209
+        y: 72
+        width: 33
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41e9c88ca494f3d50800000000000000
-      internalID: 6719169754601135636
+      spriteID: 659c789edb7b09240800000000000000
+      internalID: 4796535629444270422
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 42fb9e9baf5cefa43aed30e83b1a29c4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sprite-0003_0: -5643105228771564274
-      Sprite-0003_1: 6719169754601135636
+      black_cable_0: -2515856347621907295
+      black_cable_1: 4796535629444270422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
