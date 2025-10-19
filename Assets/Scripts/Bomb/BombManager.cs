@@ -136,4 +136,6 @@ public class BombManager : MonoBehaviour
                 pressFText.SetActive(false);
         }
     }
+
+
 }
