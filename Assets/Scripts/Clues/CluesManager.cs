@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +24,11 @@ public class CluesManager : MonoBehaviour
     [SerializeField] private Sprite[] seqSprites;
     [SerializeField] private GameObject hasSeqClueUI;
     public bool hasFoundSequenceClue { get; private set; }
+
+    [Header("FrequancyClue")]
+    [SerializeField] private TMP_Text frequencyText;
+    [SerializeField] private GameObject hasFreqClueUI;
+    public bool hasFoundFreqClue { get; private set; }
 
     private void Awake()
     {
@@ -72,6 +78,14 @@ public class CluesManager : MonoBehaviour
             hasSeqClueUI.SetActive(true);
         }
     }
+    public void MarkFreqClueAsFound()
+    {
+        if (!hasFoundFreqClue)
+        {
+            hasFoundFreqClue = true;
+            hasFreqClueUI.SetActive(true);
+        }
+    }
 
     public void SetupSequenceClueUI()
     {
@@ -79,5 +93,23 @@ public class CluesManager : MonoBehaviour
         {
             seqLocations[i].sprite = seqSprites[BombDefuseManager.instance.correctSequence[i]];   
         }
+    }
+
+    public void SetupFreqClueUI()
+    {
+        float frequancy = BombDefuseManager.instance.targetValue;
+
+        float rangeWidth = 0.20f;
+        float lowestPossibleMin = frequancy - rangeWidth;
+        float highestPossibleMin = frequancy;
+
+        lowestPossibleMin = Mathf.Max(0f, lowestPossibleMin);
+        highestPossibleMin = Mathf.Min(highestPossibleMin, 1f - rangeWidth);
+
+        float randomMin = Random.Range(lowestPossibleMin, highestPossibleMin);
+
+        float randomMax = randomMin + rangeWidth;
+
+        frequencyText.text = $"{randomMin:F2} - {randomMax:F2}";
     }
 }

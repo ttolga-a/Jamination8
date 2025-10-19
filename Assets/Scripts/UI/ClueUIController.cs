@@ -8,6 +8,7 @@ public class ClueUIController : MonoBehaviour
     [SerializeField] private GameObject wireClueUI;  // 1 Tuþu için
     [SerializeField] private GameObject symbolClueUI;  // 2 Tuþu için
     [SerializeField] private GameObject sequenceClueUI; // 3 Tuþu için
+    [SerializeField] private GameObject freqClueUI;
     // Diðerleri için de buraya ekleyebilirsin...
 
     // Hangi ipucunun o anda ekranda olduðunu takip etmek için bir deðiþken
@@ -28,6 +29,10 @@ public class ClueUIController : MonoBehaviour
         {
             SwitchActiveClue(sequenceClueUI);
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && CluesManager.instance.hasFoundSequenceClue)
+        {
+            SwitchActiveClue(freqClueUI);
+        }
 
         if (Input.GetKeyUp(KeyCode.Alpha1) && currentlyShowingClue == wireClueUI)
         {
@@ -40,6 +45,11 @@ public class ClueUIController : MonoBehaviour
             currentlyShowingClue = null;
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3) && currentlyShowingClue == sequenceClueUI)
+        {
+            currentlyShowingClue.SetActive(false);
+            currentlyShowingClue = null;
+        }
+        else if (Input.GetKeyUp(KeyCode.Alpha4) && currentlyShowingClue == freqClueUI)
         {
             currentlyShowingClue.SetActive(false);
             currentlyShowingClue = null;

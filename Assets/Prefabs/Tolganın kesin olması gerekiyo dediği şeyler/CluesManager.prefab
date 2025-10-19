@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1291733446344482246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7618128755774737697}
+  - component: {fileID: 6734026980291347225}
+  m_Layer: 0
+  m_Name: CluesManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7618128755774737697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291733446344482246}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 782.7676, y: 1083.6945, z: -2.297666}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6734026980291347225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291733446344482246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f39323392ff0d84284508f1a3d669ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueShowLoc: {fileID: 0}
+  wireClueSprites:
+  - {fileID: 5547231041137847945, guid: 38d7c194131eee94993efa9d461e44db, type: 3}
+  - {fileID: -8039052942066127755, guid: fbf411adaf85869468bb23e378310cf3, type: 3}
+  - {fileID: -5361548388960492683, guid: d3972b02281e28445845ed45fc6e684b, type: 3}
+  - {fileID: -2515856347621907295, guid: 7c95e11a698dd0547a15f06a1aeca37a, type: 3}
+  hasWireClueUI: {fileID: 0}
+  symbolLocations:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  symbolSprites:
+  - {fileID: 21300000, guid: f87e3ee6fb82f254088cf631df01d748, type: 3}
+  - {fileID: 21300000, guid: 0179f5934bb0f3a4a9a4898e0c63cfd1, type: 3}
+  - {fileID: 21300000, guid: b179e32557409634c822eb7e1b8ebd9b, type: 3}
+  - {fileID: 21300000, guid: efe0ce452eea4c74993c90b8c37dce43, type: 3}
+  hasSymbomClueUI: {fileID: 0}
+  seqLocations:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  seqSprites:
+  - {fileID: -855298285791758126, guid: a20da30fe8a32684f92a5a605eead4b1, type: 3}
+  - {fileID: 6937817954938267909, guid: 6d824eb042592eb498bd8bd9d235021a, type: 3}
+  - {fileID: -6470460504253458178, guid: 48ee225526ab8da4fad60b9a026586a8, type: 3}
+  - {fileID: -4178046375966092550, guid: cf8c2507c78e9da43ba4821ce9ad6426, type: 3}
+  - {fileID: 4130640169021434097, guid: e263060c8c3a12e478ed821627e0534c, type: 3}
+  - {fileID: 1734083152993632163, guid: 30f0c040859a26a40b161350b56bef36, type: 3}
+  - {fileID: 7028616704906629411, guid: 45549d2cfce24e243befe6b25168b038, type: 3}
+  - {fileID: 8288426215254106694, guid: 76a81364fc004bf45b22784d9b4733a1, type: 3}
+  - {fileID: 4113829005332862926, guid: db422fff7338d434e9c15b5b9fa0041a, type: 3}
+  hasSeqClueUI: {fileID: 0}
+  frequencyText: {fileID: 0}
+  hasFreqClueUI: {fileID: 0}
