@@ -6,16 +6,19 @@ public class BombManager : MonoBehaviour
 {
     public static BombManager instance;
     public Player player;
+    private Animator anim;
 
     [SerializeField] private GameObject endUI;
     [SerializeField] private int bombFullTime = 300;
     public GameObject pressFText;
     private bool playerInRange = false;
     public float bombRemainingTime;
+    public bool isBlowing = false;
 
     private void Awake()
     {
         instance = this;
+        anim = GetComponent<Animator>();
     }
 
     void Start()
@@ -32,7 +35,8 @@ public class BombManager : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.F))
+        bool shouldBeBlowing = (bombRemainingTime <= 5);
+        if (playerInRange && Input.GetKeyDown(KeyCode.F) && !shouldBeBlowing)
         {
             BombDefuseManager.instance.bombUI.SetActive(!BombDefuseManager.instance.bombUI.activeSelf);
             if (BombDefuseManager.instance.bombUI.activeSelf)
@@ -40,11 +44,20 @@ public class BombManager : MonoBehaviour
             else
                 player.UnlockPlayer();
         }
-
-        if (Input.GetKeyDown(KeyCode.V))
+        if (shouldBeBlowing && BombDefuseManager.instance.bombUI.activeSelf)
         {
-            endUI.SetActive(true);
+            BombDefuseManager.instance.bombUI.SetActive(false);
+            player.UnlockPlayer();
         }
+
+        CheckBombAnimation();
+    }
+
+    private void CheckBombAnimation()
+    {
+        bool shouldBeBlowing = (bombRemainingTime <= 5);
+
+        anim.SetBool("blowing", shouldBeBlowing);
     }
 
     private IEnumerator StartCountdown()
