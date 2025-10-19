@@ -12,6 +12,7 @@ public class Ingame_UI : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     public TMP_Text bombUnstableText;
     private bool isPaused = false;
+    private bool isSettings = false;
 
     private void Awake()
     {
@@ -41,7 +42,7 @@ public class Ingame_UI : MonoBehaviour
 
     private void PauseButton()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && isSettings == false)
         {
             if (isPaused)
             {
@@ -58,6 +59,8 @@ public class Ingame_UI : MonoBehaviour
                 player.LockPlayer();
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Escape) && isSettings)
+            SettingsButton();
     }
 
     public void ResumeButton()
@@ -71,6 +74,7 @@ public class Ingame_UI : MonoBehaviour
     {
         settingsPanel.SetActive(!settingsPanel.activeSelf);
         pauseUI.SetActive(!pauseUI.activeSelf);
+        isSettings = !isSettings;
     }
 
     public void PlayAgainButton()

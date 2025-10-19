@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -109,10 +109,10 @@ TextureImporter:
       name: red_cable_0
       rect:
         serializedVersion: 2
-        x: 80
-        y: 88
-        width: 33
-        height: 9
+        x: 81
+        y: 89
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,9 +131,9 @@ TextureImporter:
       name: red_cable_1
       rect:
         serializedVersion: 2
-        x: 208
-        y: 90
-        width: 19
+        x: 209
+        y: 89
+        width: 32
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -149,33 +149,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: red_cable_2
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 89
-        width: 15
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da406436f9b7805c0800000000000000
-      internalID: -4249010323928513363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fe3b9c1155a6ef848a628687acbc4c33
     internalID: 0
     vertices: []
     indices: 
@@ -188,6 +166,7 @@ TextureImporter:
       red_cable_0: 5547231041137847945
       red_cable_1: -7304533108555215257
       red_cable_2: -4249010323928513363
+      red_cable_3: 472207620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

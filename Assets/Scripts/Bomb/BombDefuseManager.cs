@@ -86,6 +86,7 @@ public class BombDefuseManager : MonoBehaviour
     {
         wiresCorrectIndex = UnityEngine.Random.Range(0, wires.Length);
         wireClue.SetupWireClue(wiresCorrectIndex);
+        CluesManager.instance.SetupWireClueUI(wiresCorrectIndex);
     }
     private void WireClicked(int clickedWireIndex)
     {
