@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 7832c159bbebe88448cb4686efd2075c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7063608044363252700
+    second: ozmnbndeiserm-sheet_0
+  - first:
+      213: -2886696712283311971
+    second: ozmnbndeiserm-sheet_1
+  - first:
+      213: 7962673455824633689
+    second: ozmnbndeiserm-sheet_2
+  - first:
+      213: -5607312323799048152
+    second: ozmnbndeiserm-sheet_3
+  - first:
+      213: -6597693592946406353
+    second: ozmnbndeiserm-sheet_4
+  - first:
+      213: 1344113346130468277
+    second: ozmnbndeiserm-sheet_5
+  - first:
+      213: -4041676368142563865
+    second: ozmnbndeiserm-sheet_6
+  - first:
+      213: 1795226661545230006
+    second: ozmnbndeiserm-sheet_7
+  - first:
+      213: -5155773780643552203
+    second: ozmnbndeiserm-sheet_8
+  - first:
+      213: 8019862796819390449
+    second: ozmnbndeiserm-sheet_9
+  - first:
+      213: 2640662377174705202
+    second: ozmnbndeiserm-sheet_10
+  - first:
+      213: 1561032580367772001
+    second: ozmnbndeiserm-sheet_11
+  - first:
+      213: -774420289881612758
+    second: ozmnbndeiserm-sheet_12
+  - first:
+      213: 5379805602825961617
+    second: ozmnbndeiserm-sheet_13
+  - first:
+      213: 1389755718329627343
+    second: ozmnbndeiserm-sheet_14
+  - first:
+      213: -5672961884426965199
+    second: ozmnbndeiserm-sheet_15
+  - first:
+      213: -1163956012720176125
+    second: ozmnbndeiserm-sheet_16
+  - first:
+      213: -768208174811627479
+    second: ozmnbndeiserm-sheet_17
+  - first:
+      213: -117666667470107497
+    second: ozmnbndeiserm-sheet_18
+  - first:
+      213: -4769993187848652046
+    second: ozmnbndeiserm-sheet_19
+  - first:
+      213: 8634507953249582552
+    second: ozmnbndeiserm-sheet_20
+  - first:
+      213: -6115803801513573480
+    second: ozmnbndeiserm-sheet_21
+  - first:
+      213: -3256215827470809571
+    second: ozmnbndeiserm-sheet_22
+  - first:
+      213: 4815011196249880913
+    second: ozmnbndeiserm-sheet_23
+  - first:
+      213: -3103377694948347248
+    second: ozmnbndeiserm-sheet_24
+  - first:
+      213: 232604797000849362
+    second: ozmnbndeiserm-sheet_25
+  - first:
+      213: 9213402330291815486
+    second: ozmnbndeiserm-sheet_26
+  - first:
+      213: 5897289107570436519
+    second: ozmnbndeiserm-sheet_27
+  - first:
+      213: 5658240048278180728
+    second: ozmnbndeiserm-sheet_28
+  - first:
+      213: -903762085736608275
+    second: ozmnbndeiserm-sheet_29
+  - first:
+      213: 4724434915784893941
+    second: ozmnbndeiserm-sheet_30
+  - first:
+      213: 1654093475422134280
+    second: ozmnbndeiserm-sheet_31
+  - first:
+      213: 6738475172232412482
+    second: ozmnbndeiserm-sheet_32
+  - first:
+      213: -1190180210886090897
+    second: ozmnbndeiserm-sheet_33
+  - first:
+      213: -7626642112787612036
+    second: ozmnbndeiserm-sheet_34
+  - first:
+      213: -5198765927476473187
+    second: ozmnbndeiserm-sheet_35
+  - first:
+      213: -1993301730806628316
+    second: ozmnbndeiserm-sheet_36
+  - first:
+      213: 8158293454547849657
+    second: ozmnbndeiserm-sheet_37
+  - first:
+      213: 1693700702190825653
+    second: ozmnbndeiserm-sheet_38
+  - first:
+      213: 8569012680322071648
+    second: ozmnbndeiserm-sheet_39
+  - first:
+      213: -9175646038605058086
+    second: ozmnbndeiserm-sheet_40
+  - first:
+      213: -761264023591237291
+    second: ozmnbndeiserm-sheet_41
+  - first:
+      213: -8866965614364954808
+    second: ozmnbndeiserm-sheet_42
+  - first:
+      213: -323180435165743040
+    second: ozmnbndeiserm-sheet_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd30ddc771af60260800000000000000
+      internalID: 7063608044363252700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90b01272a460f7d0800000000000000
+      internalID: -2886696712283311971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ffbdce159118e60800000000000000
+      internalID: 7962673455824633689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820a94b7623de22b0800000000000000
+      internalID: -5607312323799048152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c0f8f12a84074a0800000000000000
+      internalID: -6597693592946406353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdd7f587ff37a210800000000000000
+      internalID: 1344113346130468277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e585c3c1c419e7c0800000000000000
+      internalID: -4041676368142563865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6beb6bc132de9e810800000000000000
+      internalID: 1795226661545230006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534e77e10130378b0800000000000000
+      internalID: -5155773780643552203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff5acff8b64c4f60800000000000000
+      internalID: 8019862796819390449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234ac33f07485a420800000000000000
+      internalID: 2640662377174705202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169e1a37cd6e9a510800000000000000
+      internalID: 1561032580367772001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e50c279d4b045f0800000000000000
+      internalID: -774420289881612758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190091d31b8e8aa40800000000000000
+      internalID: 5379805602825961617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2fa9b6677694310800000000000000
+      internalID: 1389755718329627343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f666609379541b0800000000000000
+      internalID: -5672961884426965199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30442af5c2cc8dfe0800000000000000
+      internalID: -1163956012720176125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9204dc23cb6c655f0800000000000000
+      internalID: -768208174811627479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c4a831ac6fd5ef0800000000000000
+      internalID: -117666667470107497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa7f39d7749dcdb0800000000000000
+      internalID: -4769993187848652046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddf9b36c3fe3d770800000000000000
+      internalID: 8634507953249582552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ozmnbndeiserm-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893ccce68dc402ba0800000000000000
+      internalID: -6115803801513573480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b6ed528fb1985854090d7df6e9894d10
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ozmnbndeiserm-sheet_0: 7063608044363252700
+      ozmnbndeiserm-sheet_1: -2886696712283311971
+      ozmnbndeiserm-sheet_10: 2640662377174705202
+      ozmnbndeiserm-sheet_11: 1561032580367772001
+      ozmnbndeiserm-sheet_12: -774420289881612758
+      ozmnbndeiserm-sheet_13: 5379805602825961617
+      ozmnbndeiserm-sheet_14: 1389755718329627343
+      ozmnbndeiserm-sheet_15: -5672961884426965199
+      ozmnbndeiserm-sheet_16: -1163956012720176125
+      ozmnbndeiserm-sheet_17: -768208174811627479
+      ozmnbndeiserm-sheet_18: -117666667470107497
+      ozmnbndeiserm-sheet_19: -4769993187848652046
+      ozmnbndeiserm-sheet_2: 7962673455824633689
+      ozmnbndeiserm-sheet_20: 8634507953249582552
+      ozmnbndeiserm-sheet_21: -6115803801513573480
+      ozmnbndeiserm-sheet_3: -5607312323799048152
+      ozmnbndeiserm-sheet_4: -6597693592946406353
+      ozmnbndeiserm-sheet_5: 1344113346130468277
+      ozmnbndeiserm-sheet_6: -4041676368142563865
+      ozmnbndeiserm-sheet_7: 1795226661545230006
+      ozmnbndeiserm-sheet_8: -5155773780643552203
+      ozmnbndeiserm-sheet_9: 8019862796819390449
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

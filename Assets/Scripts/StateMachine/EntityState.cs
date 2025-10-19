@@ -60,7 +60,7 @@ public abstract class EntityState
     }
     private bool CanDash()
     {
-        if (player.wallDetected || stateMachine.currentState == player.dashState)
+        if (player.wallDetected || stateMachine.currentState == player.dashState || !player.CanPerformDash())
             return false;
         return true;
     }
