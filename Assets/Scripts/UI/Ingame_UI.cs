@@ -10,6 +10,7 @@ public class Ingame_UI : MonoBehaviour
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private GameObject pauseUI;
     [SerializeField] private GameObject settingsPanel;
+    public TMP_Text endGameText;
     public TMP_Text bombUnstableText;
     private bool isPaused = false;
     private bool isSettings = false;
